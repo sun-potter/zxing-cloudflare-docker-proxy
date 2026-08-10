@@ -16,15 +16,15 @@ CUSTOM_DOMAIN = "zhixingsunforever.dpdns.org"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-# routes = [
-#   { pattern = "docker.zhixingsunforever.dpdns.org", custom_domain = true },
-#   { pattern = "quay.zhixingsunforever.dpdns.org", custom_domain = true },
-#   { pattern = "gcr.zhixingsunforever.dpdns.org", custom_domain = true },
-#   { pattern = "k8s-gcr.zhixingsunforever.dpdns.org", custom_domain = true },
-#   { pattern = "k8s.zhixingsunforever.dpdns.org", custom_domain = true },
-#   { pattern = "ghcr.zhixingsunforever.dpdns.org", custom_domain = true },
-#   { pattern = "cloudsmith.zhixingsunforever.dpdns.org", custom_domain = true },
-# ]
+routes = [
+  { pattern = "docker.zhixingsunforever.dpdns.org", custom_domain = true },
+  { pattern = "quay.zhixingsunforever.dpdns.org", custom_domain = true },
+  { pattern = "gcr.zhixingsunforever.dpdns.org", custom_domain = true },
+  { pattern = "k8s-gcr.zhixingsunforever.dpdns.org", custom_domain = true },
+  { pattern = "k8s.zhixingsunforever.dpdns.org", custom_domain = true },
+  { pattern = "ghcr.zhixingsunforever.dpdns.org", custom_domain = true },
+  { pattern = "cloudsmith.zhixingsunforever.dpdns.org", custom_domain = true },
+]
 
 [env.production.vars]
 MODE = "production"
@@ -32,7 +32,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
-# route = { pattern = "docker-staging.zhixingsunforever.dpdns.org", custom_domain = true }
+route = { pattern = "docker-staging.zhixingsunforever.dpdns.org", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
