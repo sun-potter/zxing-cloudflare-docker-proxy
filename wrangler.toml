@@ -12,7 +12,7 @@ CUSTOM_DOMAIN = "zhixingsunforever.dpdns.org"
 [env.dev.vars]
 MODE = "debug"
 TARGET_UPSTREAM = "https://registry-1.docker.io"
-CUSTOM_DOMAIN = zhixingsunforever.dpdns.org"
+CUSTOM_DOMAIN = "zhixingsunforever.dpdns.org"
 
 [env.production]
 name = "cloudflare-docker-proxy"
